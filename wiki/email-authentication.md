@@ -44,6 +44,5 @@ Listed by me on 2026-10-09; status updated 2026-10-10.
 
 - Done 2026-10-09 and 2026-10-10: verified that mail from both domains passes DMARC, see Verified above.
 - Done 2026-10-10: Kivra accepts mail from both erlandsson.se and megabit.se.
-- Optionally turn on DMARC aggregate reporting (`rua`).
-- Consider moving DMARC from `p=none` to `p=reject` now that sending is confirmed to authenticate. Google Workspace is the only thing that sends mail as either domain (2026-10-09, me). For megabit.se this relies on DKIM alone, see Verified.
+- Closed 2026-10-10: the policy stays at `p=none` without `rua`, see [decisions/2026-10-10-dmarc-policy-stays-none](decisions/2026-10-10-dmarc-policy-stays-none.md). Google Workspace is the only thing that sends mail as either domain (2026-10-09, me).
 - Record the exact SPF record value of megabit.se.
