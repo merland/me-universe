@@ -1,14 +1,14 @@
 # Running races
 
-Race results and what the recordings showed. Facts come from an AI analysis session in 2026, filed as [sources/2026-10-09-running-physiology-ai-session-summary.md](../sources/2026-10-09-running-physiology-ai-session-summary.md); "source" below means that file. The FIT files named here are mine but are not filed in this wiki. Thresholds and interpretation are on [running-physiology](running-physiology.md).
+Race results and what the recordings showed. Facts come from an AI analysis session in 2026, filed as [sources/2026-10-09-running-physiology-ai-session-summary.md](../sources/2026-10-09-running-physiology-ai-session-summary.md); "source" below means that file. The race recordings are filed under `sources/` and linked in the table; their dates come from the files' own timestamps (2026-10-09, session). Thresholds and interpretation are on [running-physiology](running-physiology.md).
 
 ## Results
 
 | Date | Race | Result | Notes |
 |---|---|---|---|
 | 2015 | half marathon | 1:31:37, about 4:20/km | VDOT about 49.9; equivalent to roughly a 41:30 10K (2026-10-09, source) |
-| 2026-04 | Varvetmilen 10K | 54:17 running time by watch, about 54 min official | file Varvetmilen_2026.fit (2026-10-09, source) |
-| 2026-05 | Göteborgsvarvet half marathon | about 2:00 official, 1:59:29 active by watch | file Göteborgsvarvet_2026.fit (2026-10-09, source) |
+| 2026-04-12 | Varvetmilen 10K | 54:17 running time by watch, about 54 min official | [FIT file](../sources/2026-04-12-varvetmilen-10k.fit) (2026-10-09, source) |
+| 2026-05-23 | Göteborgsvarvet half marathon | about 2:00 official, 1:59:29 active by watch | [FIT file](../sources/2026-05-23-goteborgsvarvet-half-marathon.fit) (2026-10-09, source) |
 
 ## Varvetmilen 10K, April 2026
 

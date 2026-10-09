@@ -8,7 +8,7 @@ Born 1972-08-07; 54 in 2026; weight about 76 kg, essentially unchanged since 201
 
 ## Measured: lab test 2019-04-30
 
-From the lab report "Löptest_ME_190430-1.pdf", which I hold but have not filed here (2026-10-09, source). Age 46, weight 75.7 kg.
+From the lab report filed as [sources/2019-04-30-loptest-lab-report.pdf](../sources/2019-04-30-loptest-lab-report.pdf); the values below are as the analysis session read them from it (2026-10-09, source). Age 46, weight 75.7 kg.
 
 | Measure | Value |
 |---|---|

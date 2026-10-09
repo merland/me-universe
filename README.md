@@ -39,6 +39,8 @@ Three kinds of content live here:
 - **Dossiers on other people.** People may be mentioned where they touch my life, projects or journal, but no page is *about* a person.
 - **Machine-local state and scratch work.** Anything derivable from a repo with its own README gets a pointer, not a copy.
 
+Personal data about me is not on this list. Health, training, finances and the like are exactly what the wiki is for; the remote is private.
+
 ## Structure
 
 ```text
@@ -125,6 +127,8 @@ Unprocessed material. Every Markdown file opens with `status: draft YYYY-MM-DD` 
 ## Sources
 
 Append-only evidence, named `YYYY-MM-DD-slug.ext`. Secrets are redacted before a file is filed, never after. A source is never edited or removed once committed; a corrected version is a new file.
+
+Binary and data files belong here as much as text: lab reports, activity recordings such as FIT files, exports, scans, invoices. The date in the name is the date the evidence is about (the test, the race, the invoice), not the filing date. Personal data about me, including health, training and body measurements, is in scope for this wiki; it is private and mine. A page that uses such a file cites it by name. Prefer the richest format available, for example FIT over GPX for recorded activities.
 
 ## Archive
 
