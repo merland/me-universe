@@ -28,4 +28,4 @@ Listed by me on 2026-10-09; none is done yet.
 - Verify that mail from both domains passes SPF, DKIM and DMARC, using Gmail's "Show original" on a received message.
 - Retry sending to Kivra from megabit.se.
 - Optionally turn on DMARC aggregate reporting (`rua`).
-- Consider moving DMARC from `p=none` to `p=reject` once every legitimate sending source is confirmed to authenticate. Which sending sources exist besides Google Workspace is unknown (2026-10-09, me).
+- Consider moving DMARC from `p=none` to `p=reject` once sending is confirmed to authenticate. Google Workspace is the only thing that sends mail as either domain (2026-10-09, me).
