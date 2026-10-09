@@ -9,6 +9,7 @@ The services I use or pay for, and what each is for. This list is incomplete on 
 - **Strava** — logs my runs and shows race-time predictions; see [running-races](running-races.md) (2026-10-09, me).
 - **LastPass** — my password manager; see `pw:` in the [glossary](glossary.md) (2026-10-09, me).
 - **Kivra** — the mailbox of my company [megabit-rd-ab](megabit-rd-ab.md), which also receives ordinary email (2026-10-10, me). Kivra once rejected mail from megabit.se, see [email-authentication](email-authentication.md).
+- **ForeFlight** — holds my pilot logbook; I no longer pay for the subscription but expect the logbook to stay accessible; see [flying](flying.md) (2026-10-10, me).
 - **Gmail** — my old address marterland@gmail.com still receives but forwards everything to martin@erlandsson.se (2026-10-10, me).
 
 Plan, cost and renewal date for each: unknown.
