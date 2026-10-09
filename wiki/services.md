@@ -6,7 +6,7 @@ The services I use or pay for, and what each is for. This list is incomplete on 
 - **GitHub** — what for: unknown (2026-10-09, me).
 - **Airtable** — what for: unknown (2026-10-09, me).
 - **AWS** — Route 53 is the registrar and DNS host for megabit.se and erlandsson.se, and for a few more domains held mainly for possible future use, whose names I have not recorded (2026-10-09, me). Other AWS use: unknown.
-- **Strava** — what for: unknown (2026-10-09, me).
+- **Strava** — logs my runs and shows race-time predictions; see [running-races](running-races.md) (2026-10-09, me).
 - **LastPass** — my password manager; see `pw:` in the [glossary](glossary.md) (2026-10-09, me).
 
 Plan, cost and renewal date for each: unknown.
