@@ -11,7 +11,24 @@ How outgoing mail from my Google Workspace domains is authenticated. DNS for bot
 
 Everything in the table was set up on 2026-10-09 (2026-10-09, me). The exact SPF record values and the DKIM selector names are unknown; I did not record them (2026-10-09, me).
 
-The SPF, DKIM and DMARC DNS records of both domains were checked with `dig` and are published (2026-10-09, me). DKIM signing was activated in Google Workspace the same day, but whether mail sent from either domain actually passes SPF, DKIM and DMARC has not been verified yet (2026-10-09, me).
+The SPF, DKIM and DMARC DNS records of both domains were checked with `dig` and are published (2026-10-09, me). The DKIM selector for both domains is `google` (2026-10-09, sources/2026-10-09-learndmarc-erlandsson-se.png; 2026-10-10, sources/2026-10-10-learndmarc-megabit-se.png). The SPF record of erlandsson.se contains `include:_spf.google.com`; megabit.se's SPF record was not exercised by the test below and its exact value is still unknown (2026-10-09, me).
+
+## Verified
+
+Both domains were tested with learndmarc.com, an external receiver that reports the three checks; the results are filed as screenshots under `sources/`.
+
+| Domain | Tested | SPF | DKIM | DMARC |
+|---|---|---|---|---|
+| erlandsson.se | 2026-10-09 | pass, aligned | pass, aligned | pass |
+| megabit.se | 2026-10-10 | pass on envelope sender erlandsson.se, so not aligned | pass, aligned | pass, by DKIM alone |
+
+erlandsson.se: all three pass with alignment (2026-10-09, sources/2026-10-09-learndmarc-erlandsson-se.png).
+
+megabit.se: I send as martin@megabit.se from my erlandsson.se Google Workspace account, and Google then uses erlandsson.se as the envelope sender. SPF therefore passes for erlandsson.se but does not align with the From domain megabit.se; DKIM is signed as megabit.se and aligns, which is enough for DMARC to pass (2026-10-10, sources/2026-10-10-learndmarc-megabit-se.png). Consequence: megabit.se has no SPF fallback if a DKIM signature breaks in transit, for example through a mailing list that rewrites the message. Not a problem today.
+
+The checker also noted that neither DMARC record sets `aspf` or `adkim`, so alignment is relaxed by default (2026-10-09, sources/2026-10-09-learndmarc-erlandsson-se.png).
+
+Kivra: a test mail from martin@erlandsson.se was accepted into the Kivra mailbox of Megabit R&D AB on 2026-10-10, shown as "Kivra Mail" with Kivra's standard banner that mail received by e-mail is from a sender not verified by Kivra (2026-10-10, sources/2026-10-10-kivra-accepts-mail.png). The original rejection was of mail from megabit.se; that exact case has not been retried (2026-10-10, me).
 
 ## Why it was set up
 
@@ -23,9 +40,10 @@ For each domain, in this order: an SPF TXT record added in Route 53; a 2048-bit 
 
 ## Open items
 
-Listed by me on 2026-10-09; none is done yet.
+Listed by me on 2026-10-09; status updated 2026-10-10.
 
-- Verify that mail from both domains passes SPF, DKIM and DMARC, using Gmail's "Show original" on a received message.
-- Retry sending to Kivra from megabit.se.
+- Done 2026-10-09 and 2026-10-10: verified that mail from both domains passes DMARC, see Verified above.
+- Partly done 2026-10-10: Kivra accepts mail from erlandsson.se. Sending to Kivra from megabit.se, the case that failed originally, is still untested.
 - Optionally turn on DMARC aggregate reporting (`rua`).
-- Consider moving DMARC from `p=none` to `p=reject` once sending is confirmed to authenticate. Google Workspace is the only thing that sends mail as either domain (2026-10-09, me).
+- Consider moving DMARC from `p=none` to `p=reject` now that sending is confirmed to authenticate. Google Workspace is the only thing that sends mail as either domain (2026-10-09, me). For megabit.se this relies on DKIM alone, see Verified.
+- Record the exact SPF record value of megabit.se.
