@@ -1,6 +1,6 @@
 # Running races
 
-Race results and what the recordings showed. Facts come from an AI analysis session in 2026, filed as [sources/2026-10-09-running-physiology-ai-session-summary.md](../sources/2026-10-09-running-physiology-ai-session-summary.md); "source" below means that file. The race recordings are filed under `sources/` and linked in the table; their dates come from the files' own timestamps (2026-10-09, session). Thresholds and interpretation are on [running-physiology](running-physiology.md).
+Race results and what the recordings showed. Facts come from an AI analysis session in 2026, filed as [sources/2026-10-09-running-physiology-ai-session-summary.md](../sources/2026-10-09-running-physiology-ai-session-summary.md); "source" below means that file. The race recordings are filed under `sources/` and linked in the table; their dates come from the files' own timestamps (2026-10-09, session). Both were recorded on a Suunto Spartan Ultra Titanium, see [devices](devices.md) (2026-10-10, me). Thresholds and interpretation are on [running-physiology](running-physiology.md).
 
 ## Results
 

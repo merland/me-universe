@@ -28,7 +28,7 @@ megabit.se: I send as martin@megabit.se from my erlandsson.se Google Workspace a
 
 The checker also noted that neither DMARC record sets `aspf` or `adkim`, so alignment is relaxed by default (2026-10-09, sources/2026-10-09-learndmarc-erlandsson-se.png).
 
-Kivra: a test mail from martin@erlandsson.se was accepted into the Kivra mailbox of Megabit R&D AB on 2026-10-10, shown as "Kivra Mail" with Kivra's standard banner that mail received by e-mail is from a sender not verified by Kivra (2026-10-10, sources/2026-10-10-kivra-accepts-mail.png). The original rejection was of mail from megabit.se; that exact case has not been retried (2026-10-10, me).
+Kivra: a test mail from martin@erlandsson.se was accepted into the Kivra mailbox of Megabit R&D AB on 2026-10-10, shown as "Kivra Mail" with Kivra's standard banner that mail received by e-mail is from a sender not verified by Kivra (2026-10-10, sources/2026-10-10-kivra-accepts-mail.png). A second test from martin@megabit.se was accepted the same way (2026-10-10, sources/2026-10-10-kivra-accepts-mail-from-megabit-se.png). The original problem, Kivra rejecting mail from megabit.se, is solved.
 
 ## Why it was set up
 
@@ -43,7 +43,7 @@ For each domain, in this order: an SPF TXT record added in Route 53; a 2048-bit 
 Listed by me on 2026-10-09; status updated 2026-10-10.
 
 - Done 2026-10-09 and 2026-10-10: verified that mail from both domains passes DMARC, see Verified above.
-- Partly done 2026-10-10: Kivra accepts mail from erlandsson.se. Sending to Kivra from megabit.se, the case that failed originally, is still untested.
+- Done 2026-10-10: Kivra accepts mail from both erlandsson.se and megabit.se.
 - Optionally turn on DMARC aggregate reporting (`rua`).
 - Consider moving DMARC from `p=none` to `p=reject` now that sending is confirmed to authenticate. Google Workspace is the only thing that sends mail as either domain (2026-10-09, me). For megabit.se this relies on DKIM alone, see Verified.
 - Record the exact SPF record value of megabit.se.

@@ -33,7 +33,7 @@ These are inferences from the April and May 2026 race files, not lab measurement
 
 A race-equivalence VDOT of about 36.5 from the 2026 results is not a VO2max and must not be read as one (2026-10-09, source). A fresh treadmill VO2max and lactate test would settle current VO2max, LT1, LT2 and max HR; I have not done one (2026-10-09, source).
 
-A 5-zone watch setup was discussed but not adopted: max HR 203, zone 2 from 155, zone 3 from 171 (about LT1), zone 4 from 179, zone 5 from 189–190 (about LT2) (2026-10-09, source, proposal only). Whether I have set this on the watch is unknown.
+A 5-zone watch setup was discussed but not adopted: max HR 203, zone 2 from 155, zone 3 from 171 (about LT1), zone 4 from 179, zone 5 from 189–190 (about LT2) (2026-10-09, source, proposal only). It is not set on the Suunto Run 2, which I bought in October 2026 (2026-10-10, me).
 
 ## Current working interpretation
 
