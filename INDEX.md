@@ -11,7 +11,8 @@ One line per page, at most 25 words, saying what the page answers. A map, not a 
 - [glossary](wiki/glossary.md) — my own shorthand and the names I use for things, including the pw: pointer and my password manager.
 - [megabit-rd-ab](wiki/megabit-rd-ab.md) — my company: ownership, board, domain, Kivra mailbox, registry facts, 2025 finances.
 - [megabit-se](wiki/megabit-se.md) — the megabit.se domain: my company's domain; registrar, DNS, email, send-as identity, where catch-all mail goes, Lightsail website.
-- [running/physiology](wiki/running/physiology.md) — my HR thresholds, max HR and VO2max: 2019 lab values, 2026 estimates, durability hypothesis, analysis conventions.
+- [running/half-marathon-race-plan](wiki/running/half-marathon-race-plan.md) — heart-rate race model for a fastest half marathon: phase and per-kilometre HR targets, even pacing, how to read the numbers; hypothetical, untested.
+- [running/physiology](wiki/running/physiology.md) — my HR thresholds, max HR and VO2max: 2019 lab values, 2026 estimates, comparison with my age group, intensity bands, durability hypothesis.
 - [running/races](wiki/running/races.md) — race results from 2015 and 2026, what the 10K and half-marathon recordings showed, Strava predictions.
 - [services](wiki/services.md) — the online services I use and what each is for: Google, Gmail, GitHub, Airtable, AWS, Strava, LastPass, Kivra, ForeFlight.
 
