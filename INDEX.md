@@ -8,6 +8,7 @@ One line per page, at most 25 words, saying what the page answers. A map, not a 
 - [email-authentication](wiki/email-authentication.md) — SPF, DKIM and DMARC for my Google Workspace domains: setup, verified results per domain, Kivra outcome, open items.
 - [erlandsson-se](wiki/erlandsson-se.md) — the erlandsson.se domain: registrar, DNS, email, my main Google Workspace account, catch-all, old Gmail forwarding, Lightsail website.
 - [flying](wiki/flying.md) — my Swedish PPL(A): issue date, SEP rating, medical expiry, hours and currency, Chalmers flygklubb at Säve, PA-28, ForeFlight logbook.
+- [health-data-sync](wiki/health-data-sync.md) — how Withings scale and BPM data reach Google Fit via Health Connect on the Pixel; the 2026-10-19 permissions fix; what is verified.
 - [glossary](wiki/glossary.md) — my own shorthand and the names I use for things, including the pw: pointer and my password manager.
 - [megabit-rd-ab](wiki/megabit-rd-ab.md) — my company: ownership, board, domain, Kivra mailbox, registry facts, 2025 finances.
 - [megabit-se](wiki/megabit-se.md) — the megabit.se domain: my company's domain; registrar, DNS, email, send-as identity, where catch-all mail goes, Lightsail website.

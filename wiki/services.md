@@ -11,5 +11,7 @@ The services I use or pay for, and what each is for. This list is incomplete on 
 - **Kivra** — the mailbox of my company [megabit-rd-ab](megabit-rd-ab.md), which also receives ordinary email (2026-10-10, me). Kivra once rejected mail from megabit.se, see [email-authentication](email-authentication.md).
 - **ForeFlight** — holds my pilot logbook; I no longer pay for the subscription but expect the logbook to stay accessible; see [flying](flying.md) (2026-10-10, me).
 - **Gmail** — my old address marterland@gmail.com still receives but forwards everything to martin@erlandsson.se (2026-10-10, me).
+- **Withings** — the app for my scale and BPM; exports to Health Connect, see [health-data-sync](health-data-sync.md) (2026-10-19, me).
+- **Google Fit** — where I read my Withings measurements on the Pixel, fed through Health Connect, see [health-data-sync](health-data-sync.md) (2026-10-19, me).
 
 Plan, cost and renewal date for each: unknown.
