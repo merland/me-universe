@@ -1,6 +1,6 @@
 # Running physiology
 
-My heart-rate thresholds, max HR and VO2max, with measured values kept apart from estimates. Unless noted, facts come from an AI analysis session I had in 2026 (date not recorded, after summer 2026), filed as [sources/2026-10-09-running-physiology-ai-session-summary.md](../sources/2026-10-09-running-physiology-ai-session-summary.md); "source" below means that file. Race details are on [running-races](running-races.md).
+My heart-rate thresholds, max HR and VO2max, with measured values kept apart from estimates. Unless noted, facts come from an AI analysis session I had in 2026 (date not recorded, after summer 2026), filed as [sources/2026-10-09-running-physiology-ai-session-summary.md](../../sources/2026-10-09-running-physiology-ai-session-summary.md); "source" below means that file. Race details are on [running/races](races.md).
 
 ## About me as a runner
 
@@ -8,7 +8,7 @@ Born 1972-08-07; 54 in 2026; weight about 76 kg, essentially unchanged since 201
 
 ## Measured: lab test 2019-04-30
 
-From the lab report filed as [sources/2019-04-30-loptest-lab-report.pdf](../sources/2019-04-30-loptest-lab-report.pdf); the values below are as the analysis session read them from it (2026-10-09, source). Age 46, weight 75.7 kg.
+From the lab report filed as [sources/2019-04-30-loptest-lab-report.pdf](../../sources/2019-04-30-loptest-lab-report.pdf); the values below are as the analysis session read them from it (2026-10-09, source). Age 46, weight 75.7 kg.
 
 | Measure | Value |
 |---|---|
@@ -18,7 +18,7 @@ From the lab report filed as [sources/2019-04-30-loptest-lab-report.pdf](../sour
 | Anaerobic threshold, "Anaerob tröskel (AT)" | 189 bpm at 11.5 km/h (report says 5:10/km; 11.5 km/h is really about 5:13/km) |
 | Report's 3-zone model | low 155–172, medium 172–189, high 189–210 bpm |
 
-Terminology I use: LT1 is the aerobic threshold, 172 bpm in 2019; LT2 is the anaerobic threshold, 189 bpm in 2019 (2026-10-09, source). See [glossary](glossary.md).
+Terminology I use: LT1 is the aerobic threshold, 172 bpm in 2019; LT2 is the anaerobic threshold, 189 bpm in 2019 (2026-10-09, source). See [glossary](../glossary.md).
 
 ## Estimated: current values, 2026
 

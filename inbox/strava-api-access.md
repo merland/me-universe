@@ -6,7 +6,7 @@ Proposed by an agent on 2026-10-09 after I asked whether it was possible. Not de
 
 ## What it would give
 
-Routine runs, weekly volume, trends, and Strava's own fitness and race-prediction numbers, pulled on demand, which [running-races](../wiki/running-races.md) currently lacks. Not the original FIT files, so RR intervals and Suunto ZoneSense fields still need the watch or Suunto app; FIT stays the source for deep analysis.
+Routine runs, weekly volume, trends, and Strava's own fitness and race-prediction numbers, pulled on demand, which [running-races](../wiki/running/races.md) currently lacks. Not the original FIT files, so RR intervals and Suunto ZoneSense fields still need the watch or Suunto app; FIT stays the source for deep analysis.
 
 ## How it would work
 
