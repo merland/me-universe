@@ -6,10 +6,10 @@ How outgoing mail from my Google Workspace domains is authenticated. DNS for bot
 
 | Domain | SPF | DKIM | DMARC |
 |---|---|---|---|
-| [megabit.se](megabit-se.md) | `v=spf1 include:_spf.google.com ~all` | selector `google`, own 2048-bit RSA key from Google Admin Console, TXT record in Route 53, signing turned on in Google Workspace | `v=DMARC1; p=none` |
-| [erlandsson.se](erlandsson-se.md) | `v=spf1 include:_spf.google.com ~all` | selector `google`, own 2048-bit RSA key from Google Admin Console, TXT record in Route 53, signing turned on in Google Workspace | `v=DMARC1; p=none` |
+| [megabit.se](megabit-se.md) | `v=spf1 include:_spf.google.com ~all` | selector `google`, own 2048-bit RSA key from Google Admin Console, TXT record in Route 53, signing turned on in Google Workspace | `v=DMARC1; p=none; rua=mailto:dmarc@megabit.se` |
+| [erlandsson.se](erlandsson-se.md) | `v=spf1 include:_spf.google.com ~all` | selector `google`, own 2048-bit RSA key from Google Admin Console, TXT record in Route 53, signing turned on in Google Workspace | `v=DMARC1; p=none; rua=mailto:dmarc@erlandsson.se` |
 
-Everything in the table was set up on 2026-10-09 (2026-10-09, me). The record values, selector and key sizes were read back from DNS with `dig` on 2026-10-19: identical answers from the authoritative Route 53 servers, Google DNS and Cloudflare DNS, so the records are fully propagated; the two DKIM public keys are different and both decode to 2048-bit RSA (2026-10-19, session). MX for both domains points at Google's servers (2026-10-19, session).
+Everything in the table was set up on 2026-10-09 (2026-10-09, me). The record values, selector and key sizes were read back from DNS with `dig` on 2026-10-19: identical answers from the authoritative Route 53 servers, Google DNS and Cloudflare DNS, so the records are fully propagated; the two DKIM public keys are different and both decode to 2048-bit RSA (2026-10-19, session). MX for both domains points at Google's servers (2026-10-19, session). The `rua` address was added to both DMARC records in Route 53 on 2026-10-19 and confirmed the same day on the authoritative servers, Google DNS and Cloudflare DNS; each domain reports to `dmarc@` on itself, which the catch-all delivers to martin@erlandsson.se, see [decisions/2026-10-19-dmarc-aggregate-reports](decisions/2026-10-19-dmarc-aggregate-reports.md) (2026-10-19, session). No report has arrived yet; receivers send at most one per day (2026-10-19, session).
 
 ## Verified
 
@@ -42,5 +42,7 @@ Listed by me on 2026-10-09; status updated 2026-10-19.
 
 - Done 2026-10-09 and 2026-10-10: verified that mail from both domains passes DMARC, see Verified above.
 - Done 2026-10-10: Kivra accepts mail from both erlandsson.se and megabit.se.
-- Closed 2026-10-10: the policy stays at `p=none` without `rua`, see [decisions/2026-10-10-dmarc-policy-stays-none](decisions/2026-10-10-dmarc-policy-stays-none.md). Google Workspace is the only thing that sends mail as either domain (2026-10-09, me).
-- Done 2026-10-19: exact SPF records of both domains read from DNS, see Current state above. Nothing open.
+- Closed 2026-10-10: the policy stays at `p=none`, see [decisions/2026-10-10-dmarc-policy-stays-none](decisions/2026-10-10-dmarc-policy-stays-none.md). Google Workspace is the only thing that sends mail as either domain (2026-10-09, me).
+- Done 2026-10-19: exact SPF records of both domains read from DNS, see Current state above.
+- Done 2026-10-19: `rua` added to both domains, see [decisions/2026-10-19-dmarc-aggregate-reports](decisions/2026-10-19-dmarc-aggregate-reports.md).
+- Open: read the first aggregate reports when they arrive at dmarc@erlandsson.se and dmarc@megabit.se, and check that no unknown sender appears.

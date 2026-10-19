@@ -18,7 +18,8 @@ One line per page, at most 25 words, saying what the page answers. A map, not a 
 
 ## decisions
 
-- [2026-10-10-dmarc-policy-stays-none](wiki/decisions/2026-10-10-dmarc-policy-stays-none.md) — both domains keep DMARC p=none and no rua; why, and the alternatives passed over.
+- [2026-10-10-dmarc-policy-stays-none](wiki/decisions/2026-10-10-dmarc-policy-stays-none.md) — both domains keep DMARC p=none and no rua; why, and the alternatives passed over; superseded on the rua point.
+- [2026-10-19-dmarc-aggregate-reports](wiki/decisions/2026-10-19-dmarc-aggregate-reports.md) — rua added to both DMARC records, one dmarc@ address per domain, policy still p=none; why, and alternatives passed over.
 
 ## archive
 

@@ -71,7 +71,15 @@ if [ "$have_history" = 1 ]; then
   done
 fi
 git status --porcelain -- wiki/decisions sources 2>/dev/null | grep -vE '^(\?\?|A ) ' | while read -r l; do
-  fail "uncommitted change to append-only file: $l"
+  f=${l##* }
+  case "$f" in
+    wiki/decisions/*)
+      changed=$(git diff HEAD -- "$f" | grep -E '^[-+]' | grep -vE '^(\+\+\+|---)')
+      if printf '%s\n' "$changed" | grep -qvE '^\+Superseded by'; then
+        fail "uncommitted change to append-only file: $l"
+      fi;;
+    *) fail "uncommitted change to append-only file: $l";;
+  esac
 done
 
 # 7. Journal: YYYY-MM-DD.md, never edited after its day (one day of grace).
