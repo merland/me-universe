@@ -1,4 +1,5 @@
 Superseded by [2026-10-19-dmarc-aggregate-reports](2026-10-19-dmarc-aggregate-reports.md) on the rua point; the p=none policy stands.
+Superseded by [2026-10-20-dmarc-policy-quarantine](2026-10-20-dmarc-policy-quarantine.md) on the policy point.
 # DMARC policy stays at p=none
 
 Decided: both megabit.se and erlandsson.se keep `v=DMARC1; p=none`. No aggregate-report address (`rua`) is added for now.

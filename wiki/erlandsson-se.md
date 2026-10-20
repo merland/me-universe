@@ -6,4 +6,4 @@ The domain is mainly for email. It also has a placeholder website that contains 
 
 My old Gmail address, marterland@gmail.com, still exists and receives mail, but everything is forwarded to martin@erlandsson.se, so I never read the Gmail inbox itself (2026-10-10, me).
 
-Outgoing mail is authenticated with SPF, DKIM and DMARC at policy `p=none`, verified end to end on 2026-10-09 and accepted by Kivra; details are on [email-authentication](email-authentication.md) (2026-10-10, me).
+Outgoing mail is authenticated with SPF, DKIM and DMARC at policy `p=quarantine` since 2026-10-20, verified end to end on 2026-10-09 and accepted by Kivra; details are on [email-authentication](email-authentication.md) (2026-10-10, me).
