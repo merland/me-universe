@@ -5,7 +5,7 @@ One line per page, at most 25 words, saying what the page answers. A map, not a 
 ## wiki
 
 - [devices](wiki/devices.md) — the devices I work from, including current and previous Suunto watches, and what is recorded about each.
-- [email-authentication](wiki/email-authentication.md) — SPF, DKIM, DMARC and MX for my Google Workspace domains: setup, verified results, Kivra outcome, aggregate reports and spoofing seen, open items.
+- [email-authentication](wiki/email-authentication.md) — SPF, DKIM, DMARC and MX for my Google Workspace domains: setup, verified results, Kivra outcome, aggregate reports and forging seen, open items.
 - [erlandsson-se](wiki/erlandsson-se.md) — the erlandsson.se domain: registrar, DNS, email, my main Google Workspace account, catch-all, old Gmail forwarding, Lightsail website.
 - [flying](wiki/flying.md) — my Swedish PPL(A): issue date, SEP rating, medical expiry, hours and currency, Chalmers flygklubb at Säve, PA-28, ForeFlight logbook.
 - [health-data-sync](wiki/health-data-sync.md) — how Withings scale and BPM data reach Google Fit via Health Connect on the Pixel; the 2026-10-19 permissions fix; what is verified.

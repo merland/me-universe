@@ -30,14 +30,16 @@ Kivra: a test mail from martin@erlandsson.se was accepted into the Kivra mailbox
 
 ## Aggregate reports
 
-The first reports arrived on 2026-10-20, both from Google, covering 2026-10-19, filed as [sources/2026-10-19-dmarc-report-erlandsson-se-google.xml](../sources/2026-10-19-dmarc-report-erlandsson-se-google.xml) and [sources/2026-10-19-dmarc-report-megabit-se-google.xml](../sources/2026-10-19-dmarc-report-megabit-se-google.xml) (2026-10-20, me).
+Reports are filed under `sources/` as `YYYY-MM-DD-dmarc-report-<domain>-<reporter>.xml`, named for the day covered, report id redacted because it trips the lint. Four so far, three from Google, one from Outlook.com (2026-10-21, me).
 
-| Domain | Messages | Legitimate | Forged | Forging hosts |
-|---|---|---|---|---|
-| erlandsson.se | 145 | 1 | 144 | 22 |
-| megabit.se | 89 | 0 | 89 | 14 |
+| Day covered | Domain | Reporter | Messages | Legitimate | Forged | Forging hosts | Source |
+|---|---|---|---|---|---|---|---|
+| 2026-10-19 | erlandsson.se | Google | 145 | 1 | 144 | 22 | [2026-10-19 Google](../sources/2026-10-19-dmarc-report-erlandsson-se-google.xml) |
+| 2026-10-19 | megabit.se | Google | 89 | 0 | 89 | 14 | [2026-10-19 Google](../sources/2026-10-19-dmarc-report-megabit-se-google.xml) |
+| 2026-10-19 | megabit.se | Outlook.com | 1 | 0 | 1 | 1 | [2026-10-19 Outlook](../sources/2026-10-19-dmarc-report-megabit-se-outlook.xml) |
+| 2026-10-20 | erlandsson.se | Google | 38 | 0 | 38 | 5 | [2026-10-20 Google](../sources/2026-10-20-dmarc-report-erlandsson-se-google.xml) |
 
-The one legitimate message came from Google's server 209.85.220.69 and passed SPF and DKIM with alignment. Every forged message failed SPF with softfail and had no DKIM signature; the hosts are mostly DigitalOcean machines, a spam campaign forging the From address, not a service of mine (2026-10-20, session, sources above). Only Google's receivers report, so this is a lower bound.
+The only legitimate message in any report came from Google's server 209.85.220.69 on 2026-10-19 and passed SPF and DKIM with alignment (2026-10-20, session, sources above). Every forged message failed SPF with softfail and had no DKIM signature; the hosts are mostly DigitalOcean machines, a spam campaign forging the From address, not a service of mine (2026-10-21, session, sources above). The Outlook.com message went to a hotmail.com address with megabit.se as envelope and header From (2026-10-21, sources/2026-10-19-dmarc-report-megabit-se-outlook.xml). Google's report for 2026-10-20 still lists `p=none` with disposition none on every row although the record changed to `p=quarantine` that day, so that mail was evaluated against the old record, probably cached or received before the change; no report has yet shown a quarantine disposition (2026-10-21, session, unconfirmed). Only two receivers report, so the counts are a lower bound. No Google report for megabit.se covering 2026-10-20 had arrived by 2026-10-21 (2026-10-21, me).
 
 ## Why it was set up
 
@@ -49,7 +51,7 @@ For each domain, in this order: an SPF TXT record added in Route 53; a 2048-bit 
 
 ## Open items
 
-Listed by me on 2026-10-09; status updated 2026-10-19.
+Listed by me on 2026-10-09; status updated 2026-10-21.
 
 - Done 2026-10-09 and 2026-10-10: verified that mail from both domains passes DMARC, see Verified above.
 - Done 2026-10-10: Kivra accepts mail from both erlandsson.se and megabit.se.
@@ -57,4 +59,4 @@ Listed by me on 2026-10-09; status updated 2026-10-19.
 - Done 2026-10-19: exact SPF records of both domains read from DNS, see Current state above.
 - Done 2026-10-19: `rua` added to both domains, see [decisions/2026-10-19-dmarc-aggregate-reports](decisions/2026-10-19-dmarc-aggregate-reports.md).
 - Done 2026-10-20: first reports read, see Aggregate reports above; both domains are forged by spam hosts, policy raised to `p=quarantine`.
-- Open: after a few more days of reports, if Google's servers remain the only passing source, move both domains to `p=reject` with `sp=reject`, see [decisions/2026-10-20-dmarc-policy-quarantine](decisions/2026-10-20-dmarc-policy-quarantine.md).
+- Open: after a few more days of reports, if Google's servers remain the only passing source, move both domains to `p=reject` with `sp=reject`, see [decisions/2026-10-20-dmarc-policy-quarantine](decisions/2026-10-20-dmarc-policy-quarantine.md). Four reports in on 2026-10-21: no passing source other than Google yet, and none evaluated against `p=quarantine`.
