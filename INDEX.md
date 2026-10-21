@@ -14,7 +14,7 @@ One line per page, at most 25 words, saying what the page answers. A map, not a 
 - [megabit-se](wiki/megabit-se.md) — the megabit.se domain: registrar, DNS, email, alias domain of erlandsson.se, what martin@megabit.se can and cannot do in Calendar and Drive, Lightsail website.
 - [running/half-marathon-race-plan](wiki/running/half-marathon-race-plan.md) — heart-rate race model for a fastest half marathon: phase and per-kilometre HR targets, even pacing, how to read the numbers; hypothetical, untested.
 - [running/physiology](wiki/running/physiology.md) — my HR thresholds, max HR and VO2max: 2019 lab values, 2026 estimates, comparison with my age group, intensity bands, durability hypothesis.
-- [running/races](wiki/running/races.md) — race results from 2015 and 2026, what the 10K and half-marathon recordings showed, Strava predictions.
+- [running/races](wiki/running/races.md) — race results: Göteborgsvarvet 1998–2009 from the archive, 2015 and 2026, what the 10K and half-marathon recordings showed, Strava predictions.
 - [services](wiki/services.md) — the online services I use and what each is for: Google, Gmail, GitHub, Airtable, AWS, Strava, LastPass, Kivra, ForeFlight.
 
 ## decisions

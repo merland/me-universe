@@ -10,6 +10,23 @@ Race results and what the recordings showed. Facts come from an AI analysis sess
 | 2026-04-12 | Varvetmilen 10K | 54:17 running time by watch, about 54 min official | [FIT file](../../sources/2026-04-12-varvetmilen-10k.fit) (2026-10-09, source) |
 | 2026-05-23 | Göteborgsvarvet half marathon | about 2:00 official, 1:59:29 active by watch | [FIT file](../../sources/2026-05-23-goteborgsvarvet-half-marathon.fit) (2026-10-09, source) |
 
+## Göteborgsvarvet 1998–2009
+
+Looked up on 2026-10-21 in the organiser's PDF result archive by name and birth year; the raw lines, files searched and the lookalikes excluded are in [sources/2026-10-21-goteborgsvarvet-archive-lookup.md](../../sources/2026-10-21-goteborgsvarvet-archive-lookup.md). Splits are the organiser's unofficial chip times; only the finish time is official. "Place" is the archive's Placering column, class or overall not stated; for 1998 the newspaper scan gives class place and overall place (2026-10-21, session).
+
+| Year | Finish | 5 km | 10 km | 15 km | 20 km | Place | Listed as |
+|---|---|---|---|---|---|---|---|
+| 1998 | 1:57:03 | | | | | 5242 class, 11143 overall | Göteborg |
+| 2001 | 1:41:38 | 23:26 | 46:39 | 1:11:22 | 1:36:08 | 2525 | Göteborg |
+| 2003 | 1:47:06 | 23:33 | 47:58 | 1:13:50 | 1:41:29 | 6447 | Göteborg |
+| 2004 | 1:40:29 | 22:11 | 45:19 | 1:10:11 | 1:35:30 | 3348 | Göteborg |
+| 2005 | 1:51:53 | 25:38 | 51:35 | 1:18:06 | 1:45:57 | 9496 | Hisings Backa |
+| 2007 | 1:52:20 | 24:35 | 49:45 | 1:17:33 | 1:46:24 | 11367 | Guide Konsult |
+| 2008 | 1:38:23 | 22:26 | 45:25 | 1:09:08 | 1:33:20 | 3954 | IBS JavaSolutions |
+| 2009 | 1:45:38 | 21:32 | 44:59 | 1:11:45 | 1:39:59 | 7642 | IBS JavaSolutions |
+
+Not found in 1997 (OCR scan, so probable rather than certain), 2002 and 2006 (machine text, so most likely not run). 1999, 2000 and 2010 onward have no PDFs; they are only in MikaTiming's digital archive, which was down for maintenance on 2026-10-21 and remains unchecked. Whether I ran any of those years: unknown (2026-10-21, session).
+
 ## Varvetmilen 10K, April 2026
 
 Watch distance 10.047 km, average pace about 5:24/km, average HR 184, session max 199, raw one-second peak 200 bpm confirmed by RR intervals; cadence about 182 steps/min; roughly flat course; recorded temperature about 17 C (2026-10-09, source).
