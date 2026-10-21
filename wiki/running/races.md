@@ -27,6 +27,23 @@ Looked up on 2026-10-21 in the organiser's PDF result archive by name and birth 
 
 Not found in 1997 (OCR scan, so probable rather than certain), 2002 and 2006 (machine text, so most likely not run). 1999, 2000 and 2010 onward have no PDFs; they are only in MikaTiming's digital archive, which was down for maintenance on 2026-10-21 and remains unchecked. Whether I ran any of those years: unknown (2026-10-21, session).
 
+## Midnattsloppet Göteborg 2008–2016
+
+Looked up on 2026-10-21 in the organiser's online archive by name and birth year; the raw rows and the search method are in [sources/2026-10-21-midnattsloppet-archive-lookup.md](../../sources/2026-10-21-midnattsloppet-archive-lookup.md). All are the 10 km race, class Men; the place is the archive's Ranking column, read as place among men, not stated by the site. The archive has no split times (2026-10-21, session).
+
+| Year | Time | Place | Listed as |
+|---|---|---|---|
+| 2008 | 46:40 | 910 | Hisings Backa |
+| 2009 | 44:14 | 716 | IBS Konsult |
+| 2010 | 45:56 | 834 | Iptor |
+| 2011 | 43:44 | 566 | SpeedLedger |
+| 2013 | 43:18 | 440 | SpeedLedger |
+| 2014 | 44:29 | 530 | SpeedLedger |
+| 2015 | 44:29 | 368 | SpeedLedger |
+| 2016 | 44:54 | 398 | SpeedLedger AB |
+
+Not found in 2012 or in 2017–2021 and 2025, the other years the archive holds. The archive covers no year before 2008 and none of 2022–2024, so those years are unknown (2026-10-21, session).
+
 ## Varvetmilen 10K, April 2026
 
 Watch distance 10.047 km, average pace about 5:24/km, average HR 184, session max 199, raw one-second peak 200 bpm confirmed by RR intervals; cadence about 182 steps/min; roughly flat course; recorded temperature about 17 C (2026-10-09, source).
