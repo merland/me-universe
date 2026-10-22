@@ -22,7 +22,8 @@ Runs the deterministic health check for the me-universe wiki and fixes what it f
    - a secret match: remove the secret from the file and tell me which file and line; if it was already committed, say so, since rewriting history is my decision;
    - an append-only violation in history (`sources/`, `wiki/decisions/`, `journal/`): tell me; the fix is a new file, not an edit, and only I decide;
    - a stale page (newest date older than six months): list it and ask me whether it is still true; never re-date a fact without my confirmation;
-   - a draft older than a month: list it and ask me to process or drop it.
+   - a draft older than a month: list it and ask me to process or drop it;
+   - a `deadline` line: a row in `wiki/deadlines.md` whose lead time has begun; tell me, and never delete or re-date the row to make the run pass. The row is re-dated only once the obligation has actually recurred, removed only once it is done.
 5. Re-run the lint until it reports zero `FAIL`.
 6. Commit with a message starting `Wiki maintenance:` that says what was fixed. No AI-attribution trailers.
 7. `git push`. If it fails, report the commit hash and leave it local.

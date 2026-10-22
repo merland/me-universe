@@ -4,6 +4,7 @@ One line per page, at most 25 words, saying what the page answers. A map, not a 
 
 ## wiki
 
+- [deadlines](wiki/deadlines.md) — dated obligations (medical, Suunto export, årsredovisning, DMARC review) with lead times; scripts/due.sh prints only what is due.
 - [devices](wiki/devices.md) — the devices I work from, including current and previous Suunto watches, and what is recorded about each.
 - [email-authentication](wiki/email-authentication.md) — SPF, DKIM, DMARC and MX for my Google Workspace domains: setup, verified results, Kivra outcome, aggregate reports and forging seen, open items.
 - [erlandsson-se](wiki/erlandsson-se.md) — the erlandsson.se domain: registrar, DNS, email, my main Google Workspace account, catch-all, old Gmail forwarding, Lightsail website.
@@ -26,6 +27,7 @@ One line per page, at most 25 words, saying what the page answers. A map, not a 
 - [2026-10-19-dmarc-aggregate-reports](wiki/decisions/2026-10-19-dmarc-aggregate-reports.md) — rua added to both DMARC records, one dmarc@ address per domain, policy still p=none; why, and alternatives passed over.
 - [2026-10-20-dmarc-policy-quarantine](wiki/decisions/2026-10-20-dmarc-policy-quarantine.md) — both domains move to DMARC p=quarantine after the first reports showed forged mail; p=reject is the intended next step.
 - [2026-10-22-suunto-daily-data-storage](wiki/decisions/2026-10-22-suunto-daily-data-storage.md) — Suunto daily data kept raw under sources/suunto, completed months only, workouts not kept; why, alternatives passed over.
+- [2026-10-22-deadline-register](wiki/decisions/2026-10-22-deadline-register.md) — dated obligations live in wiki/deadlines.md, checked by scripts/due.sh at session start and in the lint; no calendars; alternatives passed over.
 
 ## archive
 

@@ -59,4 +59,4 @@ Listed by me on 2026-10-09; status updated 2026-10-21.
 - Done 2026-10-19: exact SPF records of both domains read from DNS, see Current state above.
 - Done 2026-10-19: `rua` added to both domains, see [decisions/2026-10-19-dmarc-aggregate-reports](decisions/2026-10-19-dmarc-aggregate-reports.md).
 - Done 2026-10-20: first reports read, see Aggregate reports above; both domains are forged by spam hosts, policy raised to `p=quarantine`.
-- Open: after a few more days of reports, if Google's servers remain the only passing source, move both domains to `p=reject` with `sp=reject`, see [decisions/2026-10-20-dmarc-policy-quarantine](decisions/2026-10-20-dmarc-policy-quarantine.md). Four reports in on 2026-10-21: no passing source other than Google yet, and none evaluated against `p=quarantine`.
+- Open: move both domains to `p=reject` with `sp=reject` if Google's servers remain the only passing source; review date in [deadlines](deadlines.md), reasoning in [decisions/2026-10-20-dmarc-policy-quarantine](decisions/2026-10-20-dmarc-policy-quarantine.md). Four reports in on 2026-10-21: no other passing source yet, none evaluated against `p=quarantine` (2026-10-22, me).

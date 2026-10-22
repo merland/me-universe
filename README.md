@@ -56,6 +56,7 @@ inbox/           ← unprocessed material; every file opens with `status: draft 
 sources/         ← append-only evidence: exports, invoices, documents, secrets redacted before filing
 archive/         ← retired pages kept because they explain a later decision
 scripts/lint.sh  ← deterministic health check, shell only
+scripts/due.sh   ← prints the rows of wiki/deadlines.md whose lead time has begun, or "due: nothing"
 skills/          ← the session-end pass and the lint pass, as plain Markdown procedures
 ```
 
@@ -72,10 +73,11 @@ There is no `log.md`: commit messages that say what was learned make `git log` t
 ## Reading rules
 
 1. `git pull --ff-only` before anything else.
-2. Read `INDEX.md`, open only the pages relevant to the task, never bulk-read `wiki/` or `journal/`.
-3. Trust levels: `wiki/` is synthesized and may be stale, check dates; `sources/` and `journal/` are evidence; `inbox/` is unreliable.
-4. Mid-task lookup: before diagnosing a problem, choosing between options, or configuring something, re-check `INDEX.md` for a page that already covers it, and say which page was used. Lesson 6 above.
-5. Read the journal only when a task needs recent context, scanning the latest files, never the whole folder.
+2. Run `scripts/due.sh` (one line, no tokens to speak of). Anything but `due: nothing` is a deadline whose lead time has begun: tell me in the first reply, then act on it or leave the row for me; never delete a row to silence it (`wiki/deadlines.md`).
+3. Read `INDEX.md`, open only the pages relevant to the task, never bulk-read `wiki/` or `journal/`.
+4. Trust levels: `wiki/` is synthesized and may be stale, check dates; `sources/` and `journal/` are evidence; `inbox/` is unreliable.
+5. Mid-task lookup: before diagnosing a problem, choosing between options, or configuring something, re-check `INDEX.md` for a page that already covers it, and say which page was used. Lesson 6 above.
+6. Read the journal only when a task needs recent context, scanning the latest files, never the whole folder.
 
 ## Writing rules
 
@@ -92,6 +94,7 @@ There is no `log.md`: commit messages that say what was learned make `git log` t
 11. One commit per session, message says what was learned, not which files changed. Maintenance-only commits start with `Wiki maintenance:`. Push after every commit, for backup. If push fails, commit locally and report the hash.
 12. No AI-attribution trailers in commits.
 13. The remote is a private repository only I control. Never publish, fork, or push elsewhere. Never add a CI workflow that reads the contents.
+14. Dated obligations (expiring licences, medicals, certificates, tokens and secrets, cutovers, statutory filings, recurring exports) go as a row in `wiki/deadlines.md` with a lead time in days; the why stays on the page that owns the fact. `scripts/due.sh` is the only reader until a row is due, and the lint flags due rows. This is the wiki's only reminder mechanism: no calendars, and the LLM never does the date math (rule added 2026-10-22).
 
 ### How a fact is written
 
@@ -149,6 +152,7 @@ It checks:
 - inbox files without a status line, and drafts older than a month (warn);
 - knowledge pages whose newest date is older than six months (warn);
 - flat topics with three or more pages sharing a filename prefix that should become a folder (warn);
+- rows of `wiki/deadlines.md` whose lead time has begun, by running `scripts/due.sh`, each reported as `deadline …` (warn, so that a pending obligation never blocks an unrelated commit);
 - things that look like secrets: long base64 or hex strings, private key headers, keys with the common `sk-` and `ghp_` prefixes, 16-digit numbers. A secret match fails the lint and blocks the commit; the report names the file and line without printing the match.
 
 To make the block mechanical, install the script as a local pre-commit hook; hooks are not versioned, so this is done once per clone:
@@ -169,6 +173,6 @@ This repo has no connection to any other wiki, repository or skill set. If I typ
 
 ## A session, in short
 
-1. Start: pull, read this file, read `INDEX.md`, open only what the task needs.
+1. Start: pull, run `scripts/due.sh` and report anything but `due: nothing`, read this file, read `INDEX.md`, open only what the task needs.
 2. During: before diagnosing, choosing or configuring, re-check `INDEX.md`; say which page was used. Never write a secret down.
 3. End: when I say "update the wiki" or similar, run the pass in `skills/wiki-update/SKILL.md`. Name the pages, distill, journal if asked, grow folders at three pages, update `INDEX.md`, lint, one commit whose message says what was learned, push.

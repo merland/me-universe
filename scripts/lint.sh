@@ -3,6 +3,8 @@
 # Shell, awk, grep, sed, git and date only. Run from anywhere inside the repo.
 # Exit 1 on any FAIL. WARN lines are listed, not failed.
 # Usable unchanged as a pre-commit hook: ln -s ../../scripts/lint.sh .git/hooks/pre-commit
+# Check 11 runs scripts/due.sh and lists each fired row of wiki/deadlines.md as "WARN deadline …",
+# a warning so that a pending obligation never blocks an unrelated commit.
 
 set -u
 cd "$(git rev-parse --show-toplevel)" || exit 2
@@ -126,6 +128,9 @@ find wiki -maxdepth 1 -type f -name '*-*.md' 2>/dev/null | sed 's|^wiki/||' | aw
   { c[$1]++; names[$1] = names[$1] " " $0 }
   END { for (k in c) if (c[k] >= 3) print k ": " c[k] " flat pages (" names[k] " ); move them to wiki/" k "/" }
 ' | while read -r l; do warn "$l"; done
+
+# 11. Deadlines whose lead time has begun (scripts/due.sh; its "due: nothing" line is dropped).
+scripts/due.sh 2>/dev/null | grep -v '^due: nothing$' | while read -r l; do warn "deadline $l"; done
 
 # Report.
 cat "$report"

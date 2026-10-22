@@ -11,7 +11,7 @@ The session-end pass for the me-universe wiki, triggered by natural language: "u
 
 ## Steps
 
-1. **Pull.** `git pull --ff-only`. If it fails, stop and report; never force or rebase over someone else's writes.
+1. **Pull.** `git pull --ff-only`. If it fails, stop and report; never force or rebase over someone else's writes. Then run `scripts/due.sh` if this session has not: anything but `due: nothing` is a deadline to tell me about.
 2. **Name the pages.** Before editing, list what this session will touch: existing pages to change, new pages to create, a journal entry if I asked for one, anything going to `inbox/`. If the list is "everything", the scope is wrong; narrow it. Check `INDEX.md` for an existing page before creating one.
 3. **Distill.** For each page: state current state, fold a change into the sentence it changes, never append a dated amendment. Date and source every fact (`me`, `session`, `journal/YYYY-MM-DD`, `sources/<file>`). Write `unknown` for what I did not say and `unconfirmed` for what was inferred. Never paste transcripts, chats or e-mails; a pasted document becomes a redacted file in `sources/` plus a distilled sentence with provenance. A secret is never written; record `pw: entry-name` and tell me.
 4. **Proposals.** Anything an agent suggested and I have not approved goes to `inbox/`, opening with `status: draft YYYY-MM-DD`, not to `wiki/`.
@@ -19,7 +19,7 @@ The session-end pass for the me-universe wiki, triggered by natural language: "u
 6. **Journal.** If I asked, append a few lines to `journal/YYYY-MM-DD.md` for today, creating it if missing. Never touch an earlier day's file. If an entry holds a fact that will still matter in a month, copy it into a knowledge page with `journal/YYYY-MM-DD` as provenance.
 7. **Growth rule.** If a flat topic now has three or more pages, move them into `wiki/<topic>/`, fix links and `INDEX.md`, and make that its own `Wiki maintenance:` commit before the session commit.
 8. **Index.** For every page added, removed, moved or changed in purpose, update `INDEX.md`: one line, at most 25 words, what the page answers. A map, not a changelog.
-9. **Lint.** Run `scripts/lint.sh`. Fix every `FAIL`. Fix `WARN`s on the pages touched; list the others. Never commit over a `FAIL`; a secret match means remove it, then tell me.
+9. **Lint.** Run `scripts/lint.sh`. Fix every `FAIL`. Fix `WARN`s on the pages touched; list the others. Never commit over a `FAIL`; a secret match means remove it, then tell me. A `WARN deadline` line is handled in this order: act on it, or re-date the row in `wiki/deadlines.md` once the obligation has recurred; never delete a row to make the run pass; if it must wait, tell me and leave the row.
 10. **Diff.** Show `git diff --stat` and the content diff for the pages touched, and summarise what changed in a few lines.
 11. **Commit.** One commit for the session. The message says what the wiki now knows or what was learned, not which files changed. No AI-attribution trailers.
 12. **Push.** `git push`. If it fails, leave the commit local, report the hash, and do not retry with force.

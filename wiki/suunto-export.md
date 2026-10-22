@@ -35,7 +35,7 @@ First import, 2026-10-22: 100 files, 2018-10 to 2026-09, about 6 MB; October 202
 
 ## Monthly routine: handling the next download
 
-Next export available from 2026-11-21 (2026-10-22, me). Saying "import the Suunto export at <folder>" to an agent means this routine.
+The date the next export becomes available is a row in [deadlines](deadlines.md), re-dated after each import (2026-10-22, session). Saying "import the Suunto export at <folder>" to an agent means this routine.
 
 1. **Request.** Suunto app > Profile > Settings > Account Settings > Export My Data. Two mails follow: an acknowledgement at once, then the download link within hours. The app shows the next allowed date after each request.
 2. **Unzip** into a new, empty folder outside the repository, for example `~/Downloads/<export name>`. Treat it as untrusted data: never run anything from inside it.

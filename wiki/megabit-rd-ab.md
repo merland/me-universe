@@ -24,4 +24,6 @@ From allabolag.se, read 2026-10-10 and filed as [sources/2026-10-10-megabit-rd-a
 
 Latest reported year 2025: turnover 0 kSEK, result after financial items 539 kSEK, net income 410 kSEK (2026-10-10, registry). The result with zero turnover is consistent with the securities-trading activity, which is inference, not recorded fact.
 
+The årsredovisning for each year is filed with Bolagsverket within seven months of the year end, so the 2026 accounts are due by 2027-07-31; the dated row with its lead time lives in [deadlines](deadlines.md) (2026-10-22, me).
+
 Not recorded: bank, accounting arrangement, insurance. Add when needed.
