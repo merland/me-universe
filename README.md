@@ -128,7 +128,7 @@ Unprocessed material. Every Markdown file opens with `status: draft YYYY-MM-DD` 
 
 Append-only evidence, named `YYYY-MM-DD-slug.ext`. Secrets are redacted before a file is filed, never after. A source is never edited or removed once committed; a corrected version is a new file.
 
-Binary and data files belong here as much as text: lab reports, activity recordings such as FIT files, exports, scans, invoices. The date in the name is the date the evidence is about (the test, the race, the invoice), not the filing date. Personal data about me, including health, training and body measurements, is in scope for this wiki; it is private and mine. A page that uses such a file cites it by name. Prefer the richest format available, for example FIT over GPX for recorded activities.
+A recurring data export lives in its own subfolder, `sources/<origin>/`, keeping the export's own file names, which carry the month; the same append-only rule applies, so only completed months are filed. Binary and data files belong here as much as text: lab reports, activity recordings such as FIT files, exports, scans, invoices. The date in the name is the date the evidence is about (the test, the race, the invoice), not the filing date. Personal data about me, including health, training and body measurements, is in scope for this wiki; it is private and mine. A page that uses such a file cites it by name. Prefer the richest format available, for example FIT over GPX for recorded activities.
 
 ## Archive
 

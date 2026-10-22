@@ -4,7 +4,7 @@ How measurements from my Withings devices reach Google Fit on the Pixel, and the
 
 ## Devices and direction
 
-I own a Withings scale and a Withings blood-pressure monitor (BPM); models unknown (2026-10-19, me). The only direction I want is Withings into Google Fit: weight, body composition, heart rate and blood pressure. Nothing needs to flow from Google Fit back into Withings (2026-10-19, me). Steps and workouts do not apply: neither device records them, and runs go from the Suunto watch to Strava instead, see [devices](devices.md).
+I own a Withings scale and a Withings blood-pressure monitor (BPM); models unknown (2026-10-19, me). The only direction I want is Withings into Google Fit: weight, body composition, heart rate and blood pressure. Nothing needs to flow from Google Fit back into Withings (2026-10-19, me). Steps and workouts do not apply: neither device records them, and runs go from the Suunto watch to Strava instead, see [devices](devices.md). The Suunto app itself does not write to Health Connect; its all-day heart rate and sleep reach the wiki through the monthly export described on [suunto-export](suunto-export.md) (2026-10-22, me).
 
 ## How the link works
 
@@ -18,7 +18,7 @@ Google Fit side: profile picture > Settings > "Sync Fit with Health Connect", on
 
 ## The 2026-10-19 fix
 
-Nothing was arriving in Google Fit. Both apps were registered with Health Connect, but every data-type permission for both was off. Neither app asked again, because each already considered itself connected. The fix was to switch on the types per app under Settings > Health > Fitness and Wellness: write for Withings, read for Google Fit, on weight, body fat and the other composition fields, heart rate, blood pressure, steps and exercise (2026-10-19, me).
+Strava and the MyStrengthBook training app were also granted full Health Connect access on 2026-10-22, so runs forwarded from Suunto and strength sessions now reach Fit through them (2026-10-22, me). Nothing was arriving in Google Fit. Both apps were registered with Health Connect, but every data-type permission for both was off. Neither app asked again, because each already considered itself connected. The fix was to switch on the types per app under Settings > Health > Fitness and Wellness: write for Withings, read for Google Fit, on weight, body fat and the other composition fields, heart rate, blood pressure, steps and exercise (2026-10-19, me).
 
 Verified: a manual weight entry added in the Withings app appeared in Google Fit > Browse > Weight after force-stopping and reopening Google Fit (2026-10-19, me).
 
