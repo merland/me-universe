@@ -7,8 +7,8 @@ Race results and what the recordings showed. Facts come from an AI analysis sess
 | Date | Race | Result | Notes |
 |---|---|---|---|
 | 2015 | half marathon | 1:31:37, about 4:20/km | VDOT about 49.9; equivalent to roughly a 41:30 10K (2026-10-09, source) |
-| 2026-04-12 | Varvetmilen 10K | 54:17 running time by watch, about 54 min official | [FIT file](../../sources/2026-04-12-varvetmilen-10k.fit) (2026-10-09, source) |
-| 2026-05-23 | Göteborgsvarvet half marathon | about 2:00 official, 1:59:29 active by watch | [FIT file](../../sources/2026-05-23-goteborgsvarvet-half-marathon.fit) (2026-10-09, source) |
+| 2026-04-12 | Varvetmilen 10K | 54:15 official, place 1729, 2333 overall; 54:17 running time by watch | [FIT file](../../sources/2026-04-12-varvetmilen-10k.fit) (2026-10-09, source); official result (2026-10-23, [sources/2026-10-23-goteborgsvarvet-mikatiming-lookup.md](../../sources/2026-10-23-goteborgsvarvet-mikatiming-lookup.md)) |
+| 2026-05-23 | Göteborgsvarvet half marathon | 1:59:27 official, place 13693, 1013 in M50, 17340 overall; 1:59:29 active by watch | [FIT file](../../sources/2026-05-23-goteborgsvarvet-half-marathon.fit) (2026-10-09, source); official result (2026-10-23, [sources/2026-10-23-goteborgsvarvet-mikatiming-lookup.md](../../sources/2026-10-23-goteborgsvarvet-mikatiming-lookup.md)) |
 
 ## Varvetmilen 10K, April 2026
 
@@ -22,7 +22,7 @@ The file carried Suunto ZoneSense data, but its baseline started while I was alr
 
 Watch distance 21.407 km, about 1.5 percent long, so watch paces are slightly optimistic; average HR 180, session max 199, raw peak 200; cadence about 182 steps/min; ascent about 127 m; recorded temperature from about 22 C early to 27–28 C late (2026-10-09, source).
 
-Pace by 5 km block: 5:25, 5:18, 5:38, 5:58 per km; HR 171, 180, 181, 184; cadence held at 183 until the last block, where it fell to 178; step length fell from about 1.03 m to 0.94 m (2026-10-09, source). The second 10 km was about 8 percent slower than the first with less climbing, so terrain does not explain it. Three brief very-slow episodes came at about 17.1, 19.3 and 20.1 km. Around km 20 pace fell to about 6:24/km, yet I re-accelerated to about 5:57/km for km 21 and about 4:51/km for the last 400 m at HR up to 199 (2026-10-09, source).
+Official chip splits: 27:28, 54:24, 1:22:44, 1:53:21 at 5, 10, 15 and 20 km, start group 15, started 14:17:35; my place among the field slipped from about 12500 at 10 km to 13693 at the finish (2026-10-23, [sources/2026-10-23-goteborgsvarvet-mikatiming-lookup.md](../../sources/2026-10-23-goteborgsvarvet-mikatiming-lookup.md)). Pace by 5 km block on the watch: 5:25, 5:18, 5:38, 5:58 per km; HR 171, 180, 181, 184; cadence held at 183 until the last block, where it fell to 178; step length fell from about 1.03 m to 0.94 m (2026-10-09, source). The second 10 km was about 8 percent slower than the first with less climbing, so terrain does not explain it. Three brief very-slow episodes came at about 17.1, 19.3 and 20.1 km. Around km 20 pace fell to about 6:24/km, yet I re-accelerated to about 5:57/km for km 21 and about 4:51/km for the last 400 m at HR up to 199 (2026-10-09, source).
 
 What it felt like: very good in the first half; from halfway the whole lower body hurt, mostly the thighs, worsening until the last kilometres were the most painful race I have run. I finished because I was committed to sub two hours. Afterwards I developed an overuse injury in the lower back and hip that took months to heal (2026-10-09, source, me). I wore Merrell VaporGlove.
 
