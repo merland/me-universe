@@ -31,7 +31,7 @@ Looked up by name and birth year on 2026-10-21 in the organiser's PDF archive, 1
 
 \* Not credible: in 2014–2018 the archive's 5 km split equals the 15–20 km interval to the second and implies impossible second 5 km times, and the 2017 20 km split leaves 3:25 for the last 1.1 km; treat them as missing (2026-10-23, session). The fastest finish is 2015, 1:31:37, in the archive as well as in my own notes on [running/races](races.md).
 
-Registered but no finish recorded: 2006 (no split at all), the 2010 Seedningslopp Göteborg, 2013 (5 km 21:53, 10 km 46:21, nothing after, so dropped out after 10 km), the 2021 digital Göteborgsvarvet and digital marathon, 2022 (no split at all), and in 2023 both the marathon and Varvetmilen Göteborg beside the half marathon I finished. Whether each was a no-show or an unrecorded run: unknown. No entry at all in 1997, 1999, 2002, 2020, 2024 or 2025; 1997 rests on an OCR scan, so probable rather than certain (2026-10-23, session).
+Registered but no finish recorded: 2006 (no split at all), the 2010 Seedningslopp Göteborg, a 10 km race (2026-10-23, me), 2013 (5 km 21:53, 10 km 46:21, nothing after, so dropped out after 10 km), the 2021 digital Göteborgsvarvet and digital marathon, 2022 (no split at all), and in 2023 both the marathon and Varvetmilen Göteborg beside the half marathon I finished. Whether each was a no-show or an unrecorded run: unknown. No entry at all in 1997, 1999, 2002, 2020, 2024 or 2025; 1997 rests on an OCR scan, so probable rather than certain (2026-10-23, session).
 
 ## Midnattsloppet Göteborg 2008–2016
 
