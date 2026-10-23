@@ -1,10 +1,10 @@
 # Running race history
 
-Older race results recovered from organisers' archives and from my watch, 1998 to 2017. Recent races and what their recordings showed are on [running/races](races.md); thresholds on [running/physiology](physiology.md).
+Race results recovered from organisers' archives and from my watch, 1998 to 2026. Recent races and what their recordings showed are on [running/races](races.md); thresholds on [running/physiology](physiology.md).
 
-## Göteborgsvarvet 1998–2023
+## Göteborgsvarvet 1998–2026
 
-Looked up by name and birth year on 2026-10-21 in the organiser's PDF archive, 1998–2009, and on 2026-10-23 in MikaTiming's digital archive, 1980–2025; raw rows, files searched and lookalikes excluded are in [sources/2026-10-21-goteborgsvarvet-archive-lookup.md](../../sources/2026-10-21-goteborgsvarvet-archive-lookup.md) and [sources/2026-10-23-goteborgsvarvet-mikatiming-lookup.md](../../sources/2026-10-23-goteborgsvarvet-mikatiming-lookup.md). Splits are chip times; only the finish is official. "Place" is the PDF's Placering column through 2009 and MikaTiming's Place from 2010, read as place among men since MikaTiming also gives a higher Place (Total), shown as "Overall"; neither site says. MikaTiming's places for 2001–2009 run up to 21 higher than the PDF's; which is right is unknown. For 1998 the newspaper scan gives class place 5242 and overall 11143 (2026-10-23, session). The 2026 race is on [running/races](races.md).
+Looked up by name and birth year on 2026-10-21 in the organiser's PDF archive, 1998–2009, and on 2026-10-23 in MikaTiming's digital archive, 1980–2025 plus the separate 2026 results; raw rows, files searched and lookalikes excluded are in [sources/2026-10-21-goteborgsvarvet-archive-lookup.md](../../sources/2026-10-21-goteborgsvarvet-archive-lookup.md) and [sources/2026-10-23-goteborgsvarvet-mikatiming-lookup.md](../../sources/2026-10-23-goteborgsvarvet-mikatiming-lookup.md). Splits are chip times; only the finish is official. "Place" is the PDF's Placering column through 2009 and MikaTiming's Place from 2010, read as place among men since MikaTiming also gives a higher Place (Total), shown as "Overall"; neither site says. MikaTiming's places for 2001–2009 run up to 21 higher than the PDF's; which is right is unknown. For 1998 the newspaper scan gives class place 5242 and overall 11143 (2026-10-23, session). The 2026 recording, how the race felt and the official 5 km places are on [running/races](races.md).
 
 | Year | Finish | 5 km | 10 km | 15 km | 20 km | Place | Overall | Listed as |
 |---|---|---|---|---|---|---|---|---|
@@ -27,6 +27,7 @@ Looked up by name and birth year on 2026-10-21 in the organiser's PDF archive, 1
 | 2018 | 1:52:57 | 30:11 * | 51:29 | 1:18:21 | 1:48:31 | 10409 | 12253 | |
 | 2019 | 1:53:04 | 25:27 | 50:32 | 1:17:43 | 1:46:45 | 10357 | 12294 | |
 | 2023 | 2:10:48 | 27:58 | 56:15 | 1:28:02 | 2:03:48 | 13355 | 17610 | |
+| 2026 | 1:59:27 | 27:28 | 54:24 | 1:22:44 | 1:53:21 | 13693, 1013 in M50 | 17340 | |
 
 \* Not credible: in 2014–2018 the archive's 5 km split equals the 15–20 km interval to the second and implies impossible second 5 km times, and the 2017 20 km split leaves 3:25 for the last 1.1 km; treat them as missing (2026-10-23, session). The fastest finish is 2015, 1:31:37, in the archive as well as in my own notes on [running/races](races.md).
 
