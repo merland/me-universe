@@ -29,7 +29,7 @@ These are inferences from the April and May 2026 race files, not lab measurement
 | Max HR | about 203 bpm, plausible range 202–205 | observed lower bound: 200 bpm reached in both 2026 races |
 | LT1 | about 170–172 bpm | provisional, low |
 | LT2 | about 189–191 bpm, likely 190 | better constrained, by the 10K; matches 2019's 189 |
-| VO2max | unknown | not established from race data; mid or high 40s is plausible but unverified |
+| VO2max | unknown; Run 2 estimate 46.6 (2026-11-03, [running/training](training.md)) | not from race data; mid or high 40s plausible; watch figure unverified |
 
 A race-equivalence VDOT of about 36.5 from the 2026 results is not a VO2max and must not be read as one (2026-10-09, source). A fresh treadmill VO2max and lactate test would settle current VO2max, LT1, LT2 and max HR; I have not done one (2026-10-09, source).
 
