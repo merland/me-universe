@@ -21,7 +21,7 @@ Every `What must happen` cell starts with a bracketed kind tag, so a fired row s
 
 | Due | Lead days | What must happen | Pointer |
 |---|---|---|---|
-| 2026-10-27 | 0 | [Review] Move both domains to DMARC p=reject with sp=reject if Google's servers are still the only passing source in the aggregate reports; I decide, then a decision record is written and the email page updated | [email-authentication](email-authentication.md) |
+| 2026-11-17 | 0 | [Review] Move both domains to DMARC p=reject with sp=reject if Google's servers are still the only passing source in the Postmark digests of 2026-11-09 and 2026-11-16; I decide, then a decision record is written and the email page updated | [email-authentication](email-authentication.md) |
 | 2026-11-21 | 0 | [Import] Request the Suunto "Export My Data" zip and run the import routine; then re-date this row to 30 days after the export | [suunto-export](suunto-export.md) |
 | 2027-07-31 | 60 | [File] File the 2026 årsredovisning for Megabit R&D AB with Bolagsverket; I do it, then re-date this row to the next year | [megabit-rd-ab](megabit-rd-ab.md) |
 | 2027-08-22 | 60 | [Renew] Book and pass the Class 2 aeromedical exam before the medical expires; I do it, then update the expiry on the flying page and re-date this row | [flying](flying.md) |
