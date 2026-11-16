@@ -1,0 +1,156 @@
+Text rendering of a Postmark weekly DMARC digest email, made 2026-11-16 from the .eml I downloaded from Gmail.
+Only the visible text is kept. Headers other than the four below, all links, images and tracking were removed before filing,
+because the email's unsubscribe link carries a private token.
+
+From: Postmark DMARC <dmarc@postmarkapp.com>
+To: martin@erlandsson.se
+Subject: DMARC weekly digest for megabit.se
+Date: Mon, 09 Nov 2026 15:30:55 +0000
+
+Postmark weekly DMARC digests
+megabit.se
+Nov 02 – Nov 09
+179
+Emails processed
+2%
+SPF or DKIM aligned
+98%
+SPF and DKIM not aligned
+Your current DMARC policy for megabit.se is set to quarantine 100% of emails that fail SPF and DKIM alignment.
+Protect your email deliverability.
+Get more comprehensive reports to help fix authentication issues preventing your email from reaching the inbox.
+Try it free for 14 days
+Your sources
+These are sources that we know belong to you based on the DNS checks we do.
+google.com
+Total
+SPF Aligned
+DKIM Aligned
+209.85.220.41
+1
+0%
+100%
+2607:f8b0:4864:20::a2a
+1
+0%
+100%
+2607:f8b0:4864:20::e34
+1
+0%
+100%
+google.com is authorized to send on behalf of megabit.se, however it looks like SPF is still failing DMARC’s alignment test. DMARC looks at the Return-Path of a message to make sure the domain there matches the domain in your From address. If the Return-Path path doesn’t match your From address, those messages will fail DMARC’s SPF alignment test. Check with this source because you may need to set up a custom Return-Path.
+Other sources
+These sources are sending emails saying they are from megabit.se , but we couldn’t verify that they belong to you. It’s important to go through each source and set up SPF and DKIM records for sources that you control.
+How to identify unknown sources →
+How to fix SPF/DKIM records →
+Not Resolved
+Total
+SPF Aligned
+DKIM Aligned
+167.99.226.230
+15
+0%
+0%
+186.148.90.186
+10
+0%
+0%
+31.7.35.202
+10
+0%
+0%
+103.60.61.254
+9
+0%
+0%
+159.223.118.85
+8
+0%
+0%
+14 more IPs
+65
+0%
+0%
+cnode.io
+Total
+SPF Aligned
+DKIM Aligned
+150.95.26.59
+9
+0%
+0%
+your-server.de
+Total
+SPF Aligned
+DKIM Aligned
+5.75.233.226
+8
+0%
+0%
+lyxelandflamingotech.in
+Total
+SPF Aligned
+DKIM Aligned
+165.232.186.120
+8
+0%
+0%
+bredband2.com
+Total
+SPF Aligned
+DKIM Aligned
+83.209.73.65
+8
+0%
+0%
+stableserver.net
+Total
+SPF Aligned
+DKIM Aligned
+209.42.21.57
+6
+0%
+0%
+googleusercontent.com
+Total
+SPF Aligned
+DKIM Aligned
+35.233.178.112
+6
+0%
+0%
+enixns.com
+Total
+SPF Aligned
+DKIM Aligned
+91.238.162.15
+6
+0%
+0%
+zip-plus.ru
+Total
+SPF Aligned
+DKIM Aligned
+91.198.220.130
+5
+0%
+0%
+hostvn.net
+Total
+SPF Aligned
+DKIM Aligned
+103.82.198.188
+3
+0%
+0%
+Have a suggestion on how we can improve this digest?
+Reply to this email and let us know.
+Need help? Check out the FAQ page for solutions to common problems. Bespoke support is available to Postmark customers.
+Reliable delivery for all your application emails. Try Postmark!
+Start Free Trial
+Postmark is made with ❤ by the folks at
+ActiveCampaign
+ActiveCampaign LLC
+1 North Dearborn St, 5th Floor
+Chicago, IL 60602
+Want to stop receiving these weekly DMARC digests? Unsubscribe at any time.

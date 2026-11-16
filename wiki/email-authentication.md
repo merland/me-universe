@@ -30,16 +30,7 @@ Kivra: a test mail from martin@erlandsson.se was accepted into the Kivra mailbox
 
 ## Aggregate reports
 
-Reports are filed under `sources/` as `YYYY-MM-DD-dmarc-report-<domain>-<reporter>.xml`, named for the day covered, report id redacted because it trips the lint. Four filed so far, three from Google, one from Outlook.com (2026-10-21, me). Since late October Yahoo/AOL, mail.com and Socialstyrelsen also report, about ten reports a day in all, none filed yet (2026-11-03, me). Postmark now receives the same reports and emails one digest per domain every Monday with the top ten sources and their pass or fail, first expected 2026-11-09 (2026-11-03, session, unconfirmed until it arrives).
-
-| Day covered | Domain | Reporter | Messages | Legitimate | Forged | Forging hosts | Source |
-|---|---|---|---|---|---|---|---|
-| 2026-10-19 | erlandsson.se | Google | 145 | 1 | 144 | 22 | [2026-10-19 Google](../sources/2026-10-19-dmarc-report-erlandsson-se-google.xml) |
-| 2026-10-19 | megabit.se | Google | 89 | 0 | 89 | 14 | [2026-10-19 Google](../sources/2026-10-19-dmarc-report-megabit-se-google.xml) |
-| 2026-10-19 | megabit.se | Outlook.com | 1 | 0 | 1 | 1 | [2026-10-19 Outlook](../sources/2026-10-19-dmarc-report-megabit-se-outlook.xml) |
-| 2026-10-20 | erlandsson.se | Google | 38 | 0 | 38 | 5 | [2026-10-20 Google](../sources/2026-10-20-dmarc-report-erlandsson-se-google.xml) |
-
-The only legitimate message in any report came from Google's server 209.85.220.69 on 2026-10-19 and passed SPF and DKIM with alignment (2026-10-20, session, sources above). Every forged message failed SPF with softfail and had no DKIM signature; the hosts are mostly DigitalOcean machines, a spam campaign forging the From address, not a service of mine (2026-10-21, session, sources above). The Outlook.com message went to a hotmail.com address with megabit.se as envelope and header From (2026-10-21, sources/2026-10-19-dmarc-report-megabit-se-outlook.xml). Google's report for 2026-10-20 still lists `p=none` with disposition none on every row although the record changed to `p=quarantine` that day, so that mail was evaluated against the old record, probably cached or received before the change; no report has yet shown a quarantine disposition (2026-10-21, session, unconfirmed). Only two receivers report, so the counts are a lower bound. No Google report for megabit.se covering 2026-10-20 had arrived by 2026-10-21 (2026-10-21, me).
+What the reports show, and how they are filed, is on [email-dmarc-reports](email-dmarc-reports.md). In short: Google's servers are the only source that passes DMARC on either domain, in the four raw reports of October and in Postmark's first weekly digests of 2026-11-09; everything else is forged mail from rented servers (2026-11-16, session).
 
 ## Why it was set up
 
@@ -51,6 +42,6 @@ For each domain, in this order: an SPF TXT record added in Route 53; a 2048-bit 
 
 ## Open items
 
-Listed by me on 2026-10-09; status updated 2026-11-03. All but one item are done and folded into the sections above. Google Workspace is the only thing that sends mail as either domain (2026-10-09, me).
+Listed by me on 2026-10-09; status updated 2026-11-16. All but one item are done and folded into the sections above. Google Workspace is the only thing that sends mail as either domain (2026-10-09, me).
 
-- Open: move both domains to `p=reject` with `sp=reject` if Google's servers remain the only passing source; review due 2026-11-17 in [deadlines](deadlines.md), reasoning in [decisions/2026-10-20-dmarc-policy-quarantine](decisions/2026-10-20-dmarc-policy-quarantine.md). Four reports by 2026-10-21 showed no other passing source (2026-10-22, me); the Postmark digests of 2026-11-09 and 2026-11-16 are the evidence (2026-11-03, me).
+- Open: move both domains to `p=reject` with `sp=reject` if Google's servers remain the only passing source; review due 2026-11-17 in [deadlines](deadlines.md), reasoning in [decisions/2026-10-20-dmarc-policy-quarantine](decisions/2026-10-20-dmarc-policy-quarantine.md). The Postmark digests of 2026-11-09 and 2026-11-16 are the evidence (2026-11-03, me); the first pair shows no other passing source, the second is not yet read, see [email-dmarc-reports](email-dmarc-reports.md) (2026-11-16, session).
