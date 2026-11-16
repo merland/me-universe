@@ -4,7 +4,7 @@ One line per page, at most 25 words, saying what the page answers. A map, not a 
 
 ## wiki
 
-- [deadlines](wiki/deadlines.md) — dated obligations (medical, Suunto export, årsredovisning, DMARC review) with lead times; scripts/due.sh prints only what is due.
+- [deadlines](wiki/deadlines.md) — dated obligations (medical, Suunto export, årsredovisning) with lead times; scripts/due.sh prints only what is due.
 - [devices](wiki/devices.md) — the devices I work from, including current and previous Suunto watches, and what is recorded about each.
 - [email-authentication](wiki/email-authentication.md) — SPF, DKIM, DMARC and MX for my Google Workspace domains: setup, verified results, Kivra outcome, open items.
 - [email-dmarc-reports](wiki/email-dmarc-reports.md) — what DMARC reports and Postmark weekly digests show for both domains: passing sources, forging hosts, how reports are filed.
@@ -27,7 +27,8 @@ One line per page, at most 25 words, saying what the page answers. A map, not a 
 
 - [2026-10-10-dmarc-policy-stays-none](wiki/decisions/2026-10-10-dmarc-policy-stays-none.md) — both domains keep DMARC p=none and no rua; why, and the alternatives passed over; superseded on both points.
 - [2026-10-19-dmarc-aggregate-reports](wiki/decisions/2026-10-19-dmarc-aggregate-reports.md) — rua added to both DMARC records, one dmarc@ address per domain, policy still p=none; why, and alternatives passed over.
-- [2026-10-20-dmarc-policy-quarantine](wiki/decisions/2026-10-20-dmarc-policy-quarantine.md) — both domains move to DMARC p=quarantine after the first reports showed forged mail; p=reject is the intended next step.
+- [2026-10-20-dmarc-policy-quarantine](wiki/decisions/2026-10-20-dmarc-policy-quarantine.md) — both domains move to DMARC p=quarantine after the first reports showed forged mail; superseded on the policy point.
+- [2026-11-16-dmarc-policy-reject](wiki/decisions/2026-11-16-dmarc-policy-reject.md) — both domains move to DMARC p=reject with sp=reject after two weeks of Postmark digests showed Google as the only passing source.
 - [2026-11-03-dmarc-postmark-digests](wiki/decisions/2026-11-03-dmarc-postmark-digests.md) — Postmark's free weekly digest added as second rua on both domains, own address kept, policy still p=quarantine; alternatives passed over.
 - [2026-10-22-suunto-daily-data-storage](wiki/decisions/2026-10-22-suunto-daily-data-storage.md) — Suunto daily data kept raw under sources/suunto, completed months only, workouts not kept; why, alternatives passed over.
 - [2026-10-22-deadline-register](wiki/decisions/2026-10-22-deadline-register.md) — dated obligations live in wiki/deadlines.md, checked by scripts/due.sh at session start and in the lint; no calendars; alternatives passed over.

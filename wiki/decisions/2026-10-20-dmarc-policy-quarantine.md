@@ -1,3 +1,4 @@
+Superseded by [2026-11-16-dmarc-policy-reject](2026-11-16-dmarc-policy-reject.md) on the policy point.
 # DMARC policy moves to p=quarantine
 
 Decided: both megabit.se and erlandsson.se change from `p=none` to `p=quarantine`, keeping the `rua` address of each. Supersedes [2026-10-10-dmarc-policy-stays-none](2026-10-10-dmarc-policy-stays-none.md) on the policy point.
