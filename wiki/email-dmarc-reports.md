@@ -10,18 +10,20 @@ Postmark receives the same reports and emails one digest per domain every Monday
 
 ## Postmark weekly digests
 
-| Sent | Domain | Period | Messages | From Google | Google SPF aligned | Google DKIM aligned | Other sources aligned | Source |
-|---|---|---|---|---|---|---|---|---|
-| 2026-11-09 | erlandsson.se | 1–8 Nov | 353 | 8, from 6 addresses | 100% | 100% | 0% | [digest](../sources/2026-11-09-postmark-dmarc-digest-erlandsson-se.txt) |
-| 2026-11-09 | megabit.se | 2–9 Nov | 179 | 3, from 3 addresses | 0% | 100% | 0% | [digest](../sources/2026-11-09-postmark-dmarc-digest-megabit-se.txt) |
+| Sent | Domain | Period | Messages | From Google | Google SPF aligned | Google DKIM aligned | Other sources aligned | Listed in digest | Source |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-09 | erlandsson.se | 1–8 Nov | 353 | 8, from 6 addresses | 100% | 100% | 0% | 306; 12 domains, 47 messages unlisted | [digest](../sources/2026-11-09-postmark-dmarc-digest-erlandsson-se.txt) |
+| 2026-11-09 | megabit.se | 2–9 Nov | 179 | 3, from 3 addresses | 0% | 100% | 0% | all 179 | [digest](../sources/2026-11-09-postmark-dmarc-digest-megabit-se.txt) |
+| 2026-11-16 | erlandsson.se | 8–15 Nov | 1,415 | 19, from 6 addresses | 18 of 19 | 100% | 0% | 1,148; 31 domains, 267 messages unlisted | [digest](../sources/2026-11-16-postmark-dmarc-digest-erlandsson-se.txt) |
+| 2026-11-16 | megabit.se | 9–16 Nov | 564 | 3, from 3 addresses | 0% | 100% | 0% | 461; 19 domains, 103 messages unlisted | [digest](../sources/2026-11-16-postmark-dmarc-digest-megabit-se.txt) |
 
-Google is the only source that passes DMARC on either domain in the first digests; every other listed source fails both SPF and DKIM alignment (2026-11-16, session, sources above). Google's megabit.se mail passes by DKIM alone, the known envelope-sender situation described under Verified on [email-authentication](email-authentication.md); Postmark flags it and suggests a custom Return-Path, which is not something I have set up (2026-11-16, session).
+Google is the only source that passes DMARC on either domain in both digest pairs; every other listed source fails both SPF and DKIM alignment (2026-11-16, session, sources above). Google's megabit.se mail passes by DKIM alone, the known envelope-sender situation described under Verified on [email-authentication](email-authentication.md); Postmark flags it and suggests a custom Return-Path, which is not something I have set up (2026-11-16, session). One of the five erlandsson.se messages from Google's 209.85.220.69 in the second week failed SPF alignment and passed by DKIM; the cause is unknown, possibly a message forwarded by its recipient (2026-11-16, session, unconfirmed).
 
-The megabit.se digest is complete: its rows sum to 179. The erlandsson.se digest lists 306 of 353 messages and leaves 12 further domains, 47 messages, to Postmark's API. Its headline of 2% aligned equals Google's 8 messages, so the unlisted 47 very probably all fail (2026-11-16, session, unconfirmed).
+The free digest lists the largest sources only and leaves the rest to Postmark's API. The headline share of aligned mail, 2% in the first week and 1% in the second, matches Google's messages alone, and rounding leaves room for at most a handful of aligned messages among the unlisted ones; aligned mail passes under any policy (2026-11-16, session, unconfirmed). What a digest cannot show is whether any unlisted failing source is a legitimate one.
 
-The failing sources are rented servers, as in October: DigitalOcean addresses that Postmark could not resolve, Vultr, OVH, Hetzner, DreamHost and smaller hosts, 34 unresolved addresses plus nine named hosts on erlandsson.se and 19 plus nine on megabit.se (2026-11-16, session, sources above). One is different in kind: 83.209.73.65, a Bredband2 customer line in Sweden (`h83-209-73-65.cust.bredband2.com`), sent 8 messages as megabit.se, all failing. Whether that line is mine or someone I know is unknown; it was not the connection my Mac was on when checked (2026-11-16, session).
+Volume rose from 353 to 1,415 messages on erlandsson.se and from 179 to 564 on megabit.se. Postmark's address was added on 2026-11-03, so the first week was a partial one; how much of the rise is more forging is unknown (2026-11-16, session).
 
-The digests of 2026-11-16 are not yet filed (2026-11-16, session).
+The failing sources are rented servers, as in October: addresses that Postmark could not resolve, many of them DigitalOcean, plus Cloudways, OVH, Vultr, Hetzner, Timeweb and smaller hosts; 78 unresolved addresses on erlandsson.se and 41 on megabit.se in the second week (2026-11-16, session, sources above). Two addresses recur across weeks and domains, both failing: 35.233.178.112, a Google Cloud virtual machine and not Google Workspace, and 86.107.98.104 at netsons.net (2026-11-16, session). In the first week 83.209.73.65, a Bredband2 customer line in Sweden (`h83-209-73-65.cust.bredband2.com`), sent 8 messages as megabit.se, all failing; I do not recognise it, so it counts as a forger, and it is absent from the second week (2026-11-16, me).
 
 ## Raw reports filed
 

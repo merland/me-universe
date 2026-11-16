@@ -1,0 +1,180 @@
+Text rendering of a Postmark weekly DMARC digest email, made 2026-11-16 from the .eml I downloaded from Gmail.
+Only the visible text is kept. Headers other than the four below, all links, images and tracking were removed before filing,
+because the email's unsubscribe link carries a private token.
+
+From: Postmark DMARC <dmarc@postmarkapp.com>
+To: martin@erlandsson.se
+Subject: DMARC weekly digest for erlandsson.se
+Date: Mon, 16 Nov 2026 16:10:36 +0000
+
+Postmark weekly DMARC digests
+erlandsson.se
+Nov 08 – Nov 15
+1,415
+Emails processed
+1%
+SPF or DKIM aligned
+99%
+SPF and DKIM not aligned
+Your current DMARC policy for erlandsson.se is set to quarantine 100% of emails that fail SPF and DKIM alignment.
+Protect your email deliverability.
+Get more comprehensive reports to help fix authentication issues preventing your email from reaching the inbox.
+Try it free for 14 days
+Your sources
+These are sources that we know belong to you based on the DNS checks we do.
+google.com
+Total
+SPF Aligned
+DKIM Aligned
+209.85.220.41
+10
+100%
+100%
+209.85.220.69
+5
+80%
+100%
+209.85.161.44
+1
+100%
+100%
+209.85.161.46
+1
+100%
+100%
+2a00:1450:4864:20::248
+1
+100%
+100%
+1 more IP
+1
+100%
+100%
+Other sources
+These sources are sending emails saying they are from erlandsson.se , but we couldn’t verify that they belong to you. It’s important to go through each source and set up SPF and DKIM records for sources that you control.
+How to identify unknown sources →
+How to fix SPF/DKIM records →
+Not Resolved
+Total
+SPF Aligned
+DKIM Aligned
+167.172.110.147
+30
+0%
+0%
+185.151.199.90
+30
+0%
+0%
+134.122.74.125
+27
+0%
+0%
+161.35.68.165
+26
+0%
+0%
+164.92.155.239
+24
+0%
+0%
+73 more IPs
+756
+0%
+0%
+cloudwaysapps.com
+Total
+SPF Aligned
+DKIM Aligned
+159.89.145.36
+20
+0%
+0%
+167.71.20.238
+17
+0%
+0%
+64.227.112.18
+14
+0%
+0%
+134.122.30.162
+12
+0%
+0%
+37-malagadatacenter.com
+Total
+SPF Aligned
+DKIM Aligned
+37.235.39.191
+31
+0%
+0%
+tmweb.ru
+Total
+SPF Aligned
+DKIM Aligned
+89.223.125.206
+29
+0%
+0%
+theflyshop.com
+Total
+SPF Aligned
+DKIM Aligned
+137.184.184.116
+25
+0%
+0%
+googleusercontent.com
+Total
+SPF Aligned
+DKIM Aligned
+35.233.178.112
+20
+0%
+0%
+softwebpages.com
+Total
+SPF Aligned
+DKIM Aligned
+167.172.182.86
+17
+0%
+0%
+programadordigital.com.br
+Total
+SPF Aligned
+DKIM Aligned
+187.108.197.37
+17
+0%
+0%
+ip-51-68-70.eu
+Total
+SPF Aligned
+DKIM Aligned
+51.68.70.187
+17
+0%
+0%
+comnet.net.id
+Total
+SPF Aligned
+DKIM Aligned
+202.150.155.87
+17
+0%
+0%
+Use the API to fetch the 31 remaining domains.
+Have a suggestion on how we can improve this digest?
+Reply to this email and let us know.
+Need help? Check out the FAQ page for solutions to common problems. Bespoke support is available to Postmark customers.
+Reliable delivery for all your application emails. Try Postmark!
+Start Free Trial
+Postmark is made with ❤ by the folks at
+ActiveCampaign
+ActiveCampaign LLC
+1 North Dearborn St, 5th Floor
+Chicago, IL 60602
+Want to stop receiving these weekly DMARC digests? Unsubscribe at any time.

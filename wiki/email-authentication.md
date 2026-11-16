@@ -30,7 +30,7 @@ Kivra: a test mail from martin@erlandsson.se was accepted into the Kivra mailbox
 
 ## Aggregate reports
 
-What the reports show, and how they are filed, is on [email-dmarc-reports](email-dmarc-reports.md). In short: Google's servers are the only source that passes DMARC on either domain, in the four raw reports of October and in Postmark's first weekly digests of 2026-11-09; everything else is forged mail from rented servers (2026-11-16, session).
+What the reports show, and how they are filed, is on [email-dmarc-reports](email-dmarc-reports.md). In short: Google's servers are the only source that passes DMARC on either domain, in the four raw reports of October and in Postmark's weekly digests of 2026-11-09 and 2026-11-16; everything else is forged mail from rented servers (2026-11-16, session).
 
 ## Why it was set up
 
@@ -44,4 +44,4 @@ For each domain, in this order: an SPF TXT record added in Route 53; a 2048-bit 
 
 Listed by me on 2026-10-09; status updated 2026-11-16. All but one item are done and folded into the sections above. Google Workspace is the only thing that sends mail as either domain (2026-10-09, me).
 
-- Open: move both domains to `p=reject` with `sp=reject` if Google's servers remain the only passing source; review due 2026-11-17 in [deadlines](deadlines.md), reasoning in [decisions/2026-10-20-dmarc-policy-quarantine](decisions/2026-10-20-dmarc-policy-quarantine.md). The Postmark digests of 2026-11-09 and 2026-11-16 are the evidence (2026-11-03, me); the first pair shows no other passing source, the second is not yet read, see [email-dmarc-reports](email-dmarc-reports.md) (2026-11-16, session).
+- Open: move both domains to `p=reject` with `sp=reject` if Google's servers remain the only passing source; review due 2026-11-17 in [deadlines](deadlines.md), reasoning in [decisions/2026-10-20-dmarc-policy-quarantine](decisions/2026-10-20-dmarc-policy-quarantine.md). The Postmark digests of 2026-11-09 and 2026-11-16 are the evidence (2026-11-03, me); both pairs show no other passing source, so the condition for the review is met and the decision is mine, see [email-dmarc-reports](email-dmarc-reports.md) (2026-11-16, session).
