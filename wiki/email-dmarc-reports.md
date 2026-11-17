@@ -1,10 +1,10 @@
 # DMARC reports
 
-What receivers report about mail that claims to come from [megabit.se](megabit-se.md) or [erlandsson.se](erlandsson-se.md): who passes, who forges, and how the evidence is filed. The records that ask for the reports are on [email-authentication](email-authentication.md). Split from that page on 2026-11-16 when it outgrew the page budget (2026-11-16, session).
+What receivers report about mail that claims to come from [megabit.se](megabit-se.md) or [erlandsson.se](erlandsson-se.md): who passes, who forges, and how the evidence is filed. The records that ask for the reports are on [email-authentication](email-authentication.md).
 
 ## How reports arrive and are filed
 
-Each DMARC record names two `rua` addresses. Raw XML reports go to `dmarc@` on the domain itself, about ten a day from Google, Outlook.com, Yahoo/AOL, mail.com and Socialstyrelsen (2026-11-03, me). They are filed under `sources/` as `YYYY-MM-DD-dmarc-report-<domain>-<reporter>.xml`, named for the day covered, report id redacted because it trips the lint; four are filed, three from Google and one from Outlook.com, and nothing after 2026-10-20 (2026-11-16, session).
+Each DMARC record names two `rua` addresses. Raw XML reports go to `dmarc@` on the domain itself, about ten a day from Google, Outlook.com, Yahoo/AOL, mail.com and Socialstyrelsen (2026-11-03, me). They are filed under `sources/` as `YYYY-MM-DD-dmarc-report-<domain>-<reporter>.xml`, named for the day covered, report id redacted because it trips the lint; four are filed, three from Google and one from Outlook.com, and nothing after 2026-10-20 (2026-11-16, session). With the digests I no longer want them in my inbox; I chose on 2026-11-17 to hide them with a Gmail filter on mail to the two `dmarc@` addresses (skip inbox, mark read, label, never spam) over removing the own `rua` address, because they are the only complete record of what receivers reject (2026-11-17, me). Whether the filter is in place, and the label's name, is unknown (2026-11-17, session).
 
 Postmark receives the same reports and emails one digest per domain every Monday; the first pair arrived on 2026-11-09 at 15:30 UTC (2026-11-16, me, sources below). A digest is filed as `YYYY-MM-DD-postmark-dmarc-digest-<domain>.txt`, named for the day it was sent, as a text rendering of the email and never the email itself: its unsubscribe link carries a private token (2026-11-16, session).
 
@@ -24,6 +24,16 @@ The free digest lists the largest sources only and leaves the rest to Postmark's
 Volume rose from 353 to 1,415 messages on erlandsson.se and from 179 to 564 on megabit.se. Postmark's address was added on 2026-11-03, so the first week was a partial one; how much of the rise is more forging is unknown (2026-11-16, session).
 
 The failing sources are rented servers, as in October: addresses that Postmark could not resolve, many of them DigitalOcean, plus Cloudways, OVH, Vultr, Hetzner, Timeweb and smaller hosts; 78 unresolved addresses on erlandsson.se and 41 on megabit.se in the second week (2026-11-16, session, sources above). Two addresses recur across weeks and domains, both failing: 35.233.178.112, a Google Cloud virtual machine and not Google Workspace, and 86.107.98.104 at netsons.net (2026-11-16, session). In the first week 83.209.73.65, a Bredband2 customer line in Sweden (`h83-209-73-65.cust.bredband2.com`), sent 8 messages as megabit.se, all failing; I do not recognise it, so it counts as a forger, and it is absent from the second week (2026-11-16, me).
+
+## Seeing a rejected sender
+
+Under `p=reject` a failing message is refused and the recipient sees nothing. A rejection shows up in three places (2026-11-17, session):
+
+- The sender's bounce log: a third-party service shows it in its own dashboard, typically `550 5.7.26` with a DMARC reason; my Google Workspace mail bounces to my inbox.
+- The raw reports at `dmarc@`: complete and daily, one row per source address with disposition `reject`; search for the service's name or address.
+- The Postmark digest: under "Other sources" at 0% aligned, up to a week late, and a small sender is likely to fall among the unlisted sources.
+
+A new sender is tested before it is relied on: one message through it to learndmarc.com or to a Gmail address, where "Show original" shows `dmarc=pass` or `fail`.
 
 ## Raw reports filed
 
